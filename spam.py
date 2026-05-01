@@ -8,7 +8,7 @@ from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
 import base64
 import os
-import json
+
 
 # ─────────────────────────────────────────────
 # PAGE CONFIG
@@ -19,14 +19,11 @@ st.set_page_config(page_title="Spam Detector", page_icon="🛡️", layout="wide
 # GOOGLE OAUTH SETTINGS
 # (Yahan apna Client ID aur Secret daalo)
 # ─────────────────────────────────────────────
-import json
 
-with open("credentials.json") as f:
-    creds_data = json.load(f)["web"]
 
 CLIENT_ID     = st.secrets["GOOGLE_CLIENT_ID"]
 CLIENT_SECRET = st.secrets["GOOGLE_CLIENT_SECRET"]
-REDIRECT_URI  = "https://spam-email-detection-h6rokcgkxjginfas63r6ew.streamlit.app/"
+REDIRECT_URI  = "https://spam-detection-shivamrawat.streamlit.app/"
 SCOPES        = ["https://www.googleapis.com/auth/gmail.readonly"]
 
 # ─────────────────────────────────────────────
