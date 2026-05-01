@@ -16,7 +16,7 @@ st.set_page_config(page_title="Spam Detector", page_icon="🛡️", layout="wide
 # ─────────────────────────────────────────────
 CLIENT_ID     = st.secrets["GOOGLE_CLIENT_ID"]
 CLIENT_SECRET = st.secrets["GOOGLE_CLIENT_SECRET"]
-REDIRECT_URI  = "https://spam-detection-shivamrawat.streamlit.app"
+REDIRECT_URI  = "https://spam-detection-shivamrawat.streamlit.app/"
 SCOPES        = "https://www.googleapis.com/auth/gmail.readonly"
 
 # ─────────────────────────────────────────────
